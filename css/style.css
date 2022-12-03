@@ -1,0 +1,169 @@
+/* declarar unas variables de colores y fuentes*/
+:root{
+    /*fuentes*/
+        --titulos: 'Yanone Kaffeesatz', sans-serif;
+        --parrafos: 'Roboto Condensed', sans-serif;
+        /*colores corporativos*/
+        --encabezado: rgb(255, 255, 255);
+        --piepagina: rgb(17, 16, 16);
+        --enlace: rgb(136, 208, 230);
+        --enlacesobre: rgb(247, 153, 65);
+        
+    }
+    
+    /*configuracion global*/
+    h1, h2, h3, h4, h5, h6{
+        font-family: var(--titulos);
+    }
+    h1{
+        font-size: 100px;
+        text-align: center;
+    }
+    h2{
+        font-size: 65px;
+        text-align: center;
+        color: rgb(45, 60, 131);
+    }
+    h3{
+        font-size: 45px;
+        text-align: center;
+    }
+    h4{
+        font-size: 30px ;
+    }
+
+    th,tr,td,table{
+        border: 2px solid rgb(59, 218, 72);
+
+    }
+    
+    /*selector universal en css es (*) */
+    *{
+        /* calcular mejor los paddings o espaciados */
+        box-sizing: border-box;
+    }
+    
+    /* representación de una clase en css(.) */
+    /* Encabezado */
+    .home-wrappe {
+        background-image: url('../images/background.jpg');
+        background-size: cover;
+    
+    }
+    
+    header{
+        width: 100%;
+        background-color: var(--encabezado);
+        position: fixed; /*elemento fijo*/
+        padding-top: 8px;
+    
+    }
+    header nav{
+        float: right;
+        margin-left: 5px;
+        padding: 10px 2px;
+    }
+    header img{
+        width: 100px;
+    }
+    
+    header nav a{
+        color: var(--enlace);
+        text-decoration: none;
+        margin-left: 8px;
+        font-weight: bold;
+        }
+    
+        header nav a:hover{
+            color: var(--enlacesobre);
+        }
+    
+        /* seccion home aplicar estilos a identificador*/
+        #home{
+            text-align: center;
+            padding: 250px 0 250px;
+        }
+    
+        #home h1{
+            font-size: 3.0rem;
+            margin-bottom: 30px;
+        }
+    
+        #home p{
+            margin-top: 30px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    
+    
+        section{
+            padding-top: 80px;
+        }
+    
+        section h2{
+            text-align: center;
+            font-size: 2.2rem;
+            }
+    
+            /* Sección Novedades, posicionar elementos en linea o bloque */
+        
+            #nosotros .box p{
+                text-align: justify;
+            }
+    
+            #nosotros .box img{
+            
+                padding-left: 10%;
+                padding-bottom: 10px;
+                padding: justify-content: flex-start;;
+            }
+    
+            #nosotros .box h3{
+                text-align: center;
+                font-size: 1.2rem;
+            }
+            
+            #productos .box h3{
+                text-align: center;
+                font-size: 1.2rem;
+            }
+    
+            #productos .box p{
+                text-align: justify;
+            }
+    
+            /* seccion contacto */
+    
+            #contactanos{
+                background-image: url('/img/map-image.png');
+                background-color: black;
+                width: 100%;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+    
+            #contactanos h2{
+                color: #fff;
+            }
+    
+            #contactanos textarea,input{
+                width: 450px;
+                border-radius: 5px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                font-size: 1.2rem;
+                background-color: rgb(106, 196, 199);
+                color: black;
+    
+            }
+    
+            iframe{
+                margin: 15px 0 10px;
+            }
+            /* footer o pie de pagina */
+            footer{
+                width: 100%;
+                background-color: var(--piepagina);
+                color: #fff;
+                padding-top: 10px;padding-bottom: 10px;
+            }
